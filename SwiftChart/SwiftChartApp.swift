@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftChartApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ScrollingBar()
         }
     }
 }

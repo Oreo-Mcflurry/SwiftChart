@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE2CAC682C5A1885004071FF /* TestChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CAC672C5A1885004071FF /* TestChartView.swift */; };
+		EE2CAC6A2C5A1CDE004071FF /* ScrollingBarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CAC692C5A1CDE004071FF /* ScrollingBarf.swift */; };
+		EE2CAC6D2C5B387E004071FF /* SwiftUIDelayedGesture in Frameworks */ = {isa = PBXBuildFile; productRef = EE2CAC6C2C5B387E004071FF /* SwiftUIDelayedGesture */; };
+		EE855F872C532A2D00521B90 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = EE855F862C532A2D00521B90 /* DGCharts */; };
+		EE855F892C53396300521B90 /* GradientLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE855F882C53396300521B90 /* GradientLine.swift */; };
 		EEF459EC2C50E57500F9BD33 /* SwiftChartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF459EB2C50E57500F9BD33 /* SwiftChartApp.swift */; };
 		EEF459EE2C50E57500F9BD33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF459ED2C50E57500F9BD33 /* ContentView.swift */; };
 		EEF459F02C50E57700F9BD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF459EF2C50E57700F9BD33 /* Assets.xcassets */; };
@@ -14,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE2CAC672C5A1885004071FF /* TestChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChartView.swift; sourceTree = "<group>"; };
+		EE2CAC692C5A1CDE004071FF /* ScrollingBarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingBarf.swift; sourceTree = "<group>"; };
+		EE855F882C53396300521B90 /* GradientLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLine.swift; sourceTree = "<group>"; };
 		EEF459E82C50E57500F9BD33 /* SwiftChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF459EB2C50E57500F9BD33 /* SwiftChartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChartApp.swift; sourceTree = "<group>"; };
 		EEF459ED2C50E57500F9BD33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE855F872C532A2D00521B90 /* DGCharts in Frameworks */,
+				EE2CAC6D2C5B387E004071FF /* SwiftUIDelayedGesture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +63,9 @@
 			children = (
 				EEF459EB2C50E57500F9BD33 /* SwiftChartApp.swift */,
 				EEF459ED2C50E57500F9BD33 /* ContentView.swift */,
+				EE855F882C53396300521B90 /* GradientLine.swift */,
+				EE2CAC672C5A1885004071FF /* TestChartView.swift */,
+				EE2CAC692C5A1CDE004071FF /* ScrollingBarf.swift */,
 				EEF459EF2C50E57700F9BD33 /* Assets.xcassets */,
 				EEF459F12C50E57700F9BD33 /* Preview Content */,
 			);
@@ -83,6 +96,10 @@
 			dependencies = (
 			);
 			name = SwiftChart;
+			packageProductDependencies = (
+				EE855F862C532A2D00521B90 /* DGCharts */,
+				EE2CAC6C2C5B387E004071FF /* SwiftUIDelayedGesture */,
+			);
 			productName = SwiftChart;
 			productReference = EEF459E82C50E57500F9BD33 /* SwiftChart.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,10 @@
 				Base,
 			);
 			mainGroup = EEF459DF2C50E57500F9BD33;
+			packageReferences = (
+				EE855F852C532A2D00521B90 /* XCRemoteSwiftPackageReference "Charts" */,
+				EE2CAC6B2C5B387E004071FF /* XCRemoteSwiftPackageReference "SwiftUIDelayedGesture" */,
+			);
 			productRefGroup = EEF459E92C50E57500F9BD33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF459EE2C50E57500F9BD33 /* ContentView.swift in Sources */,
+				EE2CAC6A2C5A1CDE004071FF /* ScrollingBarf.swift in Sources */,
 				EEF459EC2C50E57500F9BD33 /* SwiftChartApp.swift in Sources */,
+				EE855F892C53396300521B90 /* GradientLine.swift in Sources */,
+				EE2CAC682C5A1885004071FF /* TestChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +368,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE2CAC6B2C5B387E004071FF /* XCRemoteSwiftPackageReference "SwiftUIDelayedGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ciaranrobrien/SwiftUIDelayedGesture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+		EE855F852C532A2D00521B90 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChartsOrg/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE2CAC6C2C5B387E004071FF /* SwiftUIDelayedGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE2CAC6B2C5B387E004071FF /* XCRemoteSwiftPackageReference "SwiftUIDelayedGesture" */;
+			productName = SwiftUIDelayedGesture;
+		};
+		EE855F862C532A2D00521B90 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE855F852C532A2D00521B90 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EEF459E02C50E57500F9BD33 /* Project object */;
 }
